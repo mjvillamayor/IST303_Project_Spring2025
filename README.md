@@ -36,5 +36,5 @@
 2. As an administrator, I want the system to automatically notify me when medication stock levels are low, so that I can reorder supplies before they run out. (Estimate: 4 days)
 3. As an administrator, I want to make sure all administered medications are verified through barcode scanning so that patients are ensured to receive the correct treatment. (Estimate: 4 days)
 4. As an administrator, I want to be able to receive compliance reports from medical providers and other administrators for auditing and internal purposes on a quarterly basis, so as to ensure the healthcare facility is regularly meeting regulation and safety standards. (Estimate: 5 days)
-5. As an administrator, I want to assign varying function roles to different types of administrators so that workloads and permissions are subdivided across roles. (Estimate: 3 days)
-6. As an administrator, I want to implement a feedback system that allows medical providers to voice improvements and concerns so that the application can be dynamically improved. (Estimate: 3 days)
+5. As an administrator, I want to assign various functional roles to different types of administrators on the application so that workloads and permissions are subdivided across roles. (Estimate: 3 days)
+6. As an administrator, I want to implement a feedback system that allows all stakeholders to voice improvements and concerns so that the application can be dynamically improved. (Estimate: 3 days)
