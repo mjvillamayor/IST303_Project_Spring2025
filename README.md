@@ -52,4 +52,4 @@
   - Ben:
   - Jade:
   - Mark: VS Code
-  - Millicent:
+  - Millicent: VS code
