@@ -49,7 +49,7 @@
   - Task Allocation
   
   - Question: What IDE are you using?
-  - Ben:
+  - Ben: VS CODE
   - Jade:
   - Mark: VS Code
   - Millicent: VS code
