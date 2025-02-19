@@ -3,7 +3,7 @@
 # Part A
 ## Project Name
 - Medication Management and Error Reduction System
-## Team Members
+## Team D Members
 - Ben Morehead
 - Jade Sleiman
 - Mark Villamayor
@@ -38,8 +38,7 @@
 4. As an administrator, I want to be able to receive compliance reports from medical providers and other administrators for auditing and internal purposes on a quarterly basis, so as to ensure the healthcare facility is regularly meeting regulation and safety standards. (Estimate: 5 days)
 5. As an administrator, I want to assign various functional roles to different types of administrators on the application so that workloads and permissions are subdivided across roles. (Estimate: 3 days)
 6. As an administrator, I want to implement a feedback system that allows all stakeholders to voice improvements and concerns so that the application can be dynamically improved. (Estimate: 3 days)
-# Part B
-## 
+# Part B 
 ## Tentative Meeting Schedule
 - February 17, 2025 @ 8PM
 - February 20, 2025 @ 8PM
@@ -48,14 +47,17 @@
 - March 3, 2025 @ 8PM
 - March 6, 2025 @ 8PM
 - March 10, 2025 @ 8PM
-*Meeting 1 - 02/17*
+
+*Team Meeting 1 - 02/17*
 - Agenda
- - Project Overview
- - Git Recap
- - Task Allocation
+  - Project Overview
+  - Terminal/Git Recap
+  - Task Allocation
   
- - Check-In Question: What IDE are you using?
-  - Ben: VS CODE
-  - Jade:
-  - Mark: VS Code
-  - Millicent: VS code
+  - Check-In Question: What IDE are you using?
+   - Ben: VS CODE
+   - Jade: *No response yet*
+   - Mark: VS Code
+   - Millicent: VS code
+
+  - Meeting Summary: This was the first meeting where all four members were able to be present at the same time, which includes Ben Morehead, Jade Sleiman, Mark Villamayor, and Millicent Wanyeki. As such, an overview of the project was briefly covered, which mainly consisted of being familiar with navigating the corresponding repository in GitHub and reviewing the information within it. After that, a quick recap of terminal and Git commands was conducted to ensure that everyone is on the same page in regard to navigating project directories and files in general. In order to gauge everyone's familiarity with terminal and Git commands, ensure that the repository is cloned onto local machines, and do a check-in from each member of the team for this meeting, a simple check-in question was asked that would have to be answered by each person via editing the README file. Obstacles to doing so ensued among the team, leading to task allocation being delayed to the next meeting partially because of this. Adjustments to timeline progress and a follow-up on terminal/Git commands may be necessary.
