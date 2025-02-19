@@ -55,9 +55,9 @@
   - Task Allocation
   
   - Check-In Question: What IDE are you using?
-   - Ben: VS CODE
-   - Jade: *No response yet*
-   - Mark: VS Code
-   - Millicent: VS code
+    - Ben: VS CODE
+    - Jade: *No response yet*
+    - Mark: VS Code
+    - Millicent: VS code
 
-  - Meeting Summary: This was the first meeting where all four members were able to be present at the same time, which includes Ben Morehead, Jade Sleiman, Mark Villamayor, and Millicent Wanyeki. As such, an overview of the project was briefly covered, which mainly consisted of being familiar with navigating the corresponding repository in GitHub and reviewing the information within it. After that, a quick recap of terminal and Git commands was conducted to ensure that everyone is on the same page in regard to navigating project directories and files in general. In order to gauge everyone's familiarity with terminal and Git commands, ensure that the repository is cloned onto local machines, and do a check-in from each member of the team for this meeting, a simple check-in question was asked that would have to be answered by each person via editing the README file. Obstacles to doing so ensued among the team, leading to task allocation being delayed to the next meeting partially because of this. Adjustments to timeline progress and a follow-up on terminal/Git commands may be necessary.
+- Meeting Summary: This was the first meeting where all four members were able to be present at the same time, which includes Ben Morehead, Jade Sleiman, Mark Villamayor, and Millicent Wanyeki. As such, an overview of the project was briefly covered, which mainly consisted of being familiar with navigating the corresponding repository in GitHub and reviewing the information within it. After that, a quick recap of terminal and Git commands was conducted to ensure that everyone is on the same page in regard to navigating project directories and files in general. In order to gauge everyone's familiarity with terminal and Git commands, ensure that the repository is cloned onto local machines, and do a check-in from each member of the team for this meeting, a simple check-in question was asked that would have to be answered by each person via editing the README file. Obstacles to doing so ensued among the team, leading to task allocation being delayed to the next meeting partially because of this. Adjustments to timeline progress and a follow-up on terminal/Git commands may be necessary.
