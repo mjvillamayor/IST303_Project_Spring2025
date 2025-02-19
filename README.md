@@ -39,16 +39,22 @@
 5. As an administrator, I want to assign various functional roles to different types of administrators on the application so that workloads and permissions are subdivided across roles. (Estimate: 3 days)
 6. As an administrator, I want to implement a feedback system that allows all stakeholders to voice improvements and concerns so that the application can be dynamically improved. (Estimate: 3 days)
 # Part B
+## 
 ## Tentative Meeting Schedule
 - February 17, 2025 @ 8PM
-- 
+- February 20, 2025 @ 8PM
+- February 24, 2025 @ 8PM
+- February 27, 2025 @ 8PM
+- March 3, 2025 @ 8PM
+- March 6, 2025 @ 8PM
+- March 10, 2025 @ 8PM
 *Meeting 1 - 02/17*
 - Agenda
-  - Project Overview
-  - Git Recap
-  - Task Allocation
+ - Project Overview
+ - Git Recap
+ - Task Allocation
   
-  - Question: What IDE are you using?
+ - Check-In Question: What IDE are you using?
   - Ben: VS CODE
   - Jade:
   - Mark: VS Code
