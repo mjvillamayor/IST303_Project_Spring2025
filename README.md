@@ -57,13 +57,6 @@
   - Terminal/Git Recap
   - Task Allocation
   
-<<<<<<< HEAD
-  - Question: What IDE are you using?
-  - Ben:
-  - Jade:
-  - Mark:
-  - Millicent: Yes I wa able to look at the professors remarks.
-=======
   - Check-In Question: What IDE are you using?
     - Ben: VS CODE
     - Jade: *No response yet*
@@ -84,5 +77,4 @@
     - Ben: Yes, I did and realized we overlooked the part about meeting with the professor.
     - Jade:
     - Mark: Yes.
-    - Millicent:  
->>>>>>> bd48343a8fbc771102249bc4924270974336c956
+    - Millicent: Tes I went through the professors comments.
