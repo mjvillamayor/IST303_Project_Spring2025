@@ -77,4 +77,4 @@
     - Ben: Yes, I did and realized we overlooked the part about meeting with the professor.
     - Jade:
     - Mark: Yes.
-    - Millicent: Tes I went through the professors comments.
+    - Millicent: Yes I went through the professors comments.
