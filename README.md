@@ -74,7 +74,7 @@
   
   
   - Check-In Question: Were you able to look over the Part A feedback on your own this week?
-    - Ben:
+    - Ben: Yes, I did and realized we overlooked the part about meeting with the professor.
     - Jade:
     - Mark:
     - Millicent:  
