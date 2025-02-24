@@ -9,11 +9,14 @@
 - Mark Villamayor
 - Millicent Wanyeki
 ## Product
-- The system is designed to significantly reduce medication errors in healthcare settings by effectively integrating technology-based solutions into prescription management and medication disbursements.
+- The system is designed to significantly reduce medication errors in healthcare settings by effectively integrating real-time barcode scanning alerts related to prescription management, medication dispensements, and dangerous drug-drug interactions from the perspective of medical providers.
 ## Stakeholders
-- Patients
-- Medical Providers
-- Administrators
+- **Patients**
+  - Patients will be able to access personal medical histories and information of prescribed medications, in order to be more knowledgeable and aware of their own health.
+- **Medical Providers**
+  - Medical providers ensure patient health and safety through forming individualized medical histories, robust medication administration, and coordinating with fellow healthcare personnel.
+- **Administrators**
+  - Administrators ensure the integrity, security, and functionality of the overall system that best serves patients, medical providers, and themselves.
 ## Initial User Stories
 *Patients*
 1. As a patient, I want to be able to find links to additional information for potential side effects of prescribed medication so that I can know what to expect from its consumption. (Estimate: 1 day)
@@ -57,13 +60,6 @@
   - Terminal/Git Recap
   - Task Allocation
   
-<<<<<<< HEAD
-  - Question: What IDE are you using?
-  - Ben:
-  - Jade:
-  - Mark:
-  - Millicent: Yes I wa able to look at the professors remarks.
-=======
   - Check-In Question: What IDE are you using?
     - Ben: VS CODE
     - Jade: *No response yet*
@@ -79,10 +75,8 @@
   - Rework of User Stories and Initial Discussion of Features/Task Allocations
   - Next Meeting: Professor Feedback on Part B Requirements before Submission, Development & Testing Environment Set-Up, and Potential Milestone 1.0 Start
   
-  
   - Check-In Question: Were you able to look over the Part A feedback on your own this week?
     - Ben: Yes, I did and realized we overlooked the part about meeting with the professor.
     - Jade:
     - Mark: Yes.
     - Millicent:  
->>>>>>> bd48343a8fbc771102249bc4924270974336c956
