@@ -221,3 +221,9 @@
 - Agenda
   - Team Project: Part B Draft Review
   - Development & Testing Environment Set-Up
+
+- Check-In Question: Which features/tasks are you doing for Milestone 1.0?
+  - Ben: 
+  - Jade: 
+  - Mark: Medical Provider Login (5 days) and Administrator Implementation of 2FA without Testing (3 days) 
+  - Millicent: 
