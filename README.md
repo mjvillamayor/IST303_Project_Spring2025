@@ -226,4 +226,4 @@
   - Ben: Medical Provider Barcode-Based Medication System without UI and Testing (3 days), Administrator RBAC Management Start without UI and Testing (3 days), Administrator RBAC Management Finish (2 days)
   - Jade: 
   - Mark: Medical Provider Login (5 days) and Administrator Implementation of 2FA without Testing (3 days) 
-  - Millicent: Automatic Drug Interaction check-test
+  - Millicent: Automatic Drug Interaction check-test,medication verification
