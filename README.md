@@ -223,7 +223,7 @@
   - Development & Testing Environment Set-Up
 
 - Check-In Question: Which features/tasks are you doing for Milestone 1.0?
-  - Ben: 
+  - Ben: Medical Provider Barcode-Based Medication System without UI and Testing (3 days), Administrator RBAC Management Start without UI and Testing (3 days), Administrator RBAC Management Finish (2 days)
   - Jade: 
   - Mark: Medical Provider Login (5 days) and Administrator Implementation of 2FA without Testing (3 days) 
   - Millicent: 
