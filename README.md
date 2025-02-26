@@ -198,7 +198,7 @@
   
 - Check-In Question: What IDE are you using?
   - Ben: VS CODE
-  - Jade: *No response yet*
+  - Jade: VS Code
   - Mark: VS Code
   - Millicent: VS code
 
@@ -213,7 +213,7 @@
   
 - Check-In Question: Were you able to look over the Part A feedback on your own this week?
   - Ben: Yes, I did and realized we overlooked the part about meeting with the professor.
-  - Jade: *No response yet*
+  - Jade: Yes.
   - Mark: Yes.
   - Millicent: Yes I went through the professors comments.
 
@@ -224,6 +224,6 @@
 
 - Check-In Question: Which features/tasks are you doing for Milestone 1.0?
   - Ben: Medical Provider Barcode-Based Medication System without UI and Testing (3 days), Administrator RBAC Management Start without UI and Testing (3 days), Administrator RBAC Management Finish (2 days)
-  - Jade: 
+  - Jade: Test Cases after code is completed (2 days)
   - Mark: Medical Provider Login (5 days) and Administrator Implementation of 2FA without Testing (3 days) 
   - Millicent: Automatic Drug Interaction check-test,medication verification
