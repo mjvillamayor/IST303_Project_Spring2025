@@ -285,6 +285,3 @@
   - Next Meeting: Overall review of Iteration 1 + Iteration 2 progress check
 
 - Meeting Summary: Only two people were present for this meeting, namely Jade and Mark, while Ben and Millicent were absent for some unknown reason. Originally, we were going to have a team meeting on 02/27 last week to initially check up on everyone's progress toward Iteration 1, but the continuous delay of the meeting time ultimately led to the meeting's cancellation itself by the end of the week which postponed much of the agenda planned to today. At any rate, the planned agenda for this meeting was unlikely to be much different from what was planned for last week unless something specific came up that needed to be addressed, so this meeting would have been a continuation from the previous one in checking on everyone's progress. Speaking of which, since there was only two people for this meeting with one of them not having any tasks for this first iteration, we opted to postpone going into detail about our overall progress for this project until the next meeting where more of us are hopefully able to be present by then to discuss both iterations for this first milestone. This also meant postponing any assistance/collaboration for any task that proved to be challenging, along with updating the milestone burndown chart, until the next meeting.
-
-
-  
