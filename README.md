@@ -226,7 +226,7 @@
 - February 17, 2025 @ 8PM
 - February 20, 2025 @ ~~8PM~~ 12PM
 - February 24, 2025 @ 8PM
-- February 27, 2025 @ 8PM
+- ~~February 27, 2025 @ 8PM~~ *CANCELLED due to scheduling conflicts*
 - March 3, 2025 @ 8PM
 - March 6, 2025 @ 8PM
 - March 10, 2025 @ 8PM
@@ -276,3 +276,15 @@
   - Millicent: Automatic Drug Interaction check-test,medication verification
 
 - Meeting Summary: Everyone was present for this meeting, except for Jade who was absent due to a scheduling conflict. In this meeting, we went over a rough draft of Part B which included the revised user stories with all of their tasks, the iterations that would be conducted for Milestone 1.0, and deciding which tasks should be assigned to each member of the team. From there, we went over setting up the development and testing environment together, which meant changing the repository for it and including software like mySQL, Django, and JSON. Additional set-up and work was needed after this meeting, but there was enough to start working on Iteration 1 of Milestone 1.0 this week and we knew that we would have follow up on each other's progress in the next meeting.
+
+**Team Meeting 4 - 03/03**
+- Agenda
+  - Check-Up on Iteration 1 Team Progress
+    - ~~Update Milestone 1.0 burndown chart and visualize progress~~
+  - ~~Task Assistance / Collaboration~~
+  - Next Meeting: Overall review of Iteration 1 + Iteration 2 progress check
+
+- Meeting Summary: Only two people were present for this meeting, namely Jade and Mark, while Ben and Millicent were absent for some unknown reason. Originally, we were going to have a team meeting on 02/27 last week to initially check up on everyone's progress toward Iteration 1, but the continuous delay of the meeting time ultimately led to the meeting's cancellation itself by the end of the week which postponed much of the agenda planned to today. At any rate, the planned agenda for this meeting was unlikely to be much different from what was planned for last week unless something specific came up that needed to be addressed, so this meeting would have been a continuation from the previous one in checking on everyone's progress. Speaking of which, since there was only two people for this meeting with one of them not having any tasks for this first iteration, we opted to postpone going into detail about our overall progress for this project until the next meeting where more of us are hopefully able to be present by then to discuss both iterations for this first milestone. This also meant postponing any assistance/collaboration for any task that proved to be challenging, along with updating the milestone burndown chart, until the next meeting.
+
+
+  
