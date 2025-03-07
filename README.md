@@ -220,7 +220,7 @@
   - Implement medication verification logging system (2 days)
   - Build the UI for administrators to review verification logs (2 days)
   - Test logging system (1 day)
-## Milestone 1.0 Burndown Chart
+## Milestone 1.0 Burndown Chart (as of 03/06)
 ![Image of Milestone 1.0 Burndown Chart](Milestone1.0_Burndown_Chart.png)
 ## Tentative Meeting Schedule
 - February 17, 2025 @ 8PM
