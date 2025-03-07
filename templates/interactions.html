@@ -1,0 +1,32 @@
+<!-- app/templates/interactions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drug Interaction Checker</title>
+</head>
+<body>
+    <h1>Drug Interaction Checker</h1>
+    <form id="drugForm">
+        <input type="text" id="drug_ids" name="drug_ids" placeholder="Enter drug IDs separated by commas">
+        <button type="button" onclick="submitDrugForm()">Check Interactions</button>
+    </form>
+    <div id="results"></div>
+
+    <script>
+    function submitDrugForm() {
+        const drug_ids = document.getElementById('drug_ids').value.split(',');
+        fetch('/api/interactions', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({drug_ids: drug_ids})
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('results').innerHTML = JSON.stringify(data, null, 2);
+        })
+        .catch(error => console.error('Failed to fetch interactions:', error));
+    }
+    </script>
+</body>
+</html>
