@@ -1,14 +1,26 @@
 import requests
 
 def get_drug_interactions(drug_name):
-    """Fetch drug interactions from OpenFDA API"""
-    API_URL = f"https://api.fda.gov/drug/label.json?search={drug_name}&limit=1"
-
+    """
+    Fetches drug interaction data from openFDA API.
+    """
+    url = f"https://api.fda.gov/drug/label.json?search=openfda.brand_name:{drug_name}&limit=1"
+    
     try:
-        response = requests.get(API_URL)
-        if response.status_code == 200:
-            return response.json()
+        response = requests.get(url)
+        response.raise_for_status()
+        data = response.json()
+        
+        # Extract interactions if available
+        results = data.get("results", [])
+        if results and "drug_interactions" in results[0]:
+            return results[0]["drug_interactions"]
         else:
-            return {"error": "Failed to fetch data from OpenFDA"}
-    except Exception as e:
-        return {"error": str(e)}
+            return {"message": "No interaction data found for this drug."}
+    
+    except requests.exceptions.HTTPError as http_err:
+        return {"error": f"HTTP error occurred: {http_err}"}
+    except requests.exceptions.RequestException as req_err:
+        return {"error": f"Request error: {req_err}"}
+    except Exception as err:
+        return {"error": f"An error occurred: {err}"}
