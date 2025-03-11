@@ -306,4 +306,4 @@
   - Ben:
   - Jade:
   - Mark: Yes, and I also met with Professor David during his office hours to discuss it as well.
-  - Millicent:Yes i was looked at the professors recommendation on the presentantion.
+  - Millicent:Yes i  looked at the professors recommendation on the presentantion.
