@@ -291,4 +291,19 @@
   - Check-Up on Iteration 1 and 2 Team Progress
     - Update Milestone 1.0 burndown chart and visualize progress
   - Task Assistance / Collaboration
-  - Next Meeting: Progress check of Milestone 1.0 and potential practice of presen
+  - Next Meeting: Progress check of Milestone 1.0 and potential presentation practice
+
+- Meeting Summary: Nearly everyone in our team was able to make it for this meeting, except for Jade who could not. As it is stated in the agenda above, we did a check-up on everyone's progress toward the two iterations of Milestone 1.0, in which we agreed that more progress needed to be made over the weekend to stay on track for what we had originally planned for this milestone as shown in our project burndown chart. After that, we collaborated with each other in clarifying how to complete the tasks as well as assisted each other in completing them. Overall, moving forward from this meeting, we plan to do a progress check of Milestone 1.0 as a whole in the next meeting, along with potentially practicing how to present our work so far as well after discussing how to organize and structure ourselves for such.
+
+**Team Meeting 6 - 03/10**
+- Agenda
+  - Check-up on Milestone 1.0 Team Progress
+    - Update Milestone 1.0 burndown chart and visualize progress
+  - Discussion of class presentation details and delivery preparation
+  - Task Assistance / Collaboration
+
+- Check-In Question: Were you able to look over the class announcement about how our presentations are to be conducted on Wednesday?
+  - Ben:
+  - Jade:
+  - Mark: Yes, and I also met with Professor David during his office hours to discuss it as well.
+  - Millicent:
