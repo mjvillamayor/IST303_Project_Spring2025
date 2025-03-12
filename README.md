@@ -303,7 +303,7 @@
   - Task Assistance / Collaboration
 
 - Check-In Question: Were you able to look over the class announcement about how our presentations are to be conducted on Wednesday?
-  - Ben:
+  - Ben: Yes, I have looked over how to present our work.
   - Jade: Yes, and I have looked over the professor's notes and recommendations about how to present our work.
   - Mark: Yes, and I also met with Professor David during his office hours to discuss it as well.
   - Millicent:Yes i  looked at the professors recommendation on the presentantion.
