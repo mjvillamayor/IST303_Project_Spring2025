@@ -85,3 +85,15 @@ GRANT patient TO 'john_doe'@'localhost';
 SET DEFAULT ROLE admin FOR 'admin_user'@'localhost';
 SET DEFAULT ROLE provider FOR 'dr_smith'@'localhost';
 SET DEFAULT ROLE patient FOR 'john_doe'@'localhost';
+
+CREATE USER 'mark'@'192.168.12.249' IDENTIFIED BY 'MarkCGU';
+GRANT ALL PRIVILEGES ON medical_system.* TO 'mark'@'192.168.12.249';
+FLUSH PRIVILEGES;
+
+CREATE USER 'millicent'@'192.168.4.37' IDENTIFIED BY 'MillicentCGU';
+GRANT ALL PRIVILEGES ON medical_system.* TO 'millicent'@'192.168.4.37';
+FLUSH PRIVILEGES;
+
+CREATE USER 'jade'@'76.89.206.90' IDENTIFIED BY 'JadeCGU';
+GRANT ALL PRIVILEGES ON medical_system.* TO 'jade'@'76.89.206.90';
+FLUSH PRIVILEGES;
