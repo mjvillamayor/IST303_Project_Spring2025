@@ -128,7 +128,7 @@
 - Administrator Implementation of 2FA (Administrator User Story #1)
 - Administrator Medication Verification (Administrator User Story #2)
 - Administrator Role-Based Access Control (RBAC) Management (Administrator User Story #3)
-## Iteration 1 (Length: 16 Person-Days / Finish by 03/04 11:59PM)
+## Iteration 1 (Length: 16 Person-Days / Finish by 03/04 @ 11:59PM)
 - Calculation of Iteration Time:
   - Total Work Days Available (accounting for weekends and velocity):
     - Calendar days until deadline (as of 02/24): 15 days
@@ -156,7 +156,7 @@
   - Administrator RBAC Management Start without UI and Testing (3 days)
     - Define user roles in the database (1 day)
     - Implement access control across application system (2 days)
-## Iteration 2 (Length: 16 Person-Days / Finish by 03/11 11:59PM)
+## Iteration 2 (Length: 16 Person-Days / Finish by 03/11 @ 11:59PM)
 - Calculation of Iteration Time:
   - 32 Total Work Days Available - Iteration 1 (16 days) = 16 person-days
 
@@ -220,8 +220,102 @@
   - Implement medication verification logging system (2 days)
   - Build the UI for administrators to review verification logs (2 days)
   - Test logging system (1 day)
-## Milestone 1.0 Burndown Chart (as of 03/06)
+## Milestone 1.0 Burndown Chart (as of 03/12)
 ![Image of Milestone 1.0 Burndown Chart](Milestone1.0_Burndown_Chart.png)
+# Milestone 2.0
+## Features (32 work days available for completion)
+- Patient View of Individual Medical History (Patient User Story #1)
+- Patient Monitoring of Medication (Patient User Story #2)
+- Patient Profile Portal (Patient User Story #3)
+- Medical Provider Monitoring of Medication (Medical Provider User Story #3)
+- Medical Provider Login with Messaging System (Medical Provider User Story #4)
+- Medical Provider Note Access (Medical Provider User Story #5)
+- Medical Provider CRUD of Medical Histories (Medical Provider User Story #6)
+- Administrator-Implemented Feedback System (Administrator User Story #4)
+## Iteration 1 (Length: 16 Person-Days / Finish by 04/11 @ 11:59PM)
+- Features:
+  - Patient View of Individual Medical History (4 days)
+    - Implement the database schema for the storage of patients' medical histories (1 day)
+    - Develop the API to fetch individual medical history (1 day)
+    - Build the UI for patient dashboard to display medical history (1 day)
+    - Testing and debugging (1 day)
+  - Patient Profile Portal without Testing (5 days)
+    - Implement authentication system using JSON Web Token (2 days)
+    - Develop the patient login UI (2 days)
+    - Ensure that API endpoints are secured for authorized access (1 day)
+  - Medical Provider Messaging System without Testing (3 days)
+    - Incorporate secure messaging system between doctors and nurses (2 days)
+    - Build the UI for messaging system (1 day)
+  - Medical Provider CRUD of Medical Histories (4 days)
+    - Implement medical provider permission system for history access (1 day)
+    - Develop the API for editing patient records (1 day)
+    - Build the UI for editing medical histories (1 day)
+    - Test functionality of updating patients' records (1 day)
+## Iteration 2 (Length: 16 Person-Days / Finish by 04/18 @ 11:59PM)
+- Features:
+  - Patient Monitoring of Medication (5 days)
+    - Implement the medication tracking database (1 day)
+    - Develop the API to fetch current and past prescriptions (1 day)
+    - Add a notification system for when the pick-up of medication has been missed and when a prescription renewal is required (1 day)
+    - Build the UI for alert display (1 day)
+    - Test notifcation system (1 day)
+  - Medical Provider Note Access (4 days)
+    - Design the database schema for medical providers' notes (0.5 days)
+    - Develop API endpoints for the management of notes (1 day)
+    - Build the UI for viewing and adding notes (1 day)
+    - Implement role-based access to view and edit notes (0.5 days)
+    - Test note system functionality (1 day)
+  - Administrator-Implemented Feedback System (4 days)
+    - Implement database schema for feedback submissions (1 day)
+    - Develop the API for sending and receiving feedback (1 day)
+    - Build the UI for submitting and viewing feedback (1 day)
+    - Test feedback submission and retrieval (1 day)
+  - Testing of Patient Profile Portal (1 day)
+  - Testing of Medical Provider Messaging System (1 day)
+## Task Allocation
+**Ben**
+- Patient View of Individual Medical History (4 days)
+  - Implement the database schema for the storage of patients' medical histories (1 day)
+  - Develop the API to fetch individual medical history (1 day)
+  - Build the UI for patient dashboard to display medical history (1 day)
+  - Testing and debugging (1 day)
+- Medical Provider CRUD of Medical Histories (4 days)
+  - Implement medical provider permission system for history access (1 day)
+  - Develop the API for editing patient records (1 day)
+  - Build the UI for editing medical histories (1 day)
+  - Test functionality of updating patients' records (1 day)
+
+**Jade**
+- Testing of Patient Profile Portal (1 day)
+- Testing of Medical Provider Messaging System (1 day)
+- Testing of Patient Monitoring of Medication (1 day)
+- Administrator-Implemented Feedback System (4 days)
+  - Implement database schema for feedback submissions (1 day)
+  - Develop the API for sending and receiving feedback (1 day)
+  - Build the UI for submitting and viewing feedback (1 day)
+  - Test feedback submission and retrieval (1 day)
+
+**Mark**
+- Patient Profile Portal without Testing (5 days)
+  - Implement authentication system using JSON Web Token (2 days)
+  - Develop the patient login UI (2 days)
+  - Ensure that API endpoints are secured for authorized access (1 day)
+- Medical Provider Messaging System without Testing (3 days)
+  - Incorporate secure messaging system between doctors and nurses (2 days)
+  - Build the UI for messaging system (1 day)
+
+**Millicent**
+- Patient Monitoring of Medication without Testing (4 days)
+  - Implement the medication tracking database (1 day)
+  - Develop the API to fetch current and past prescriptions (1 day)
+  - Add a notification system for when the pick-up of medication has been missed and when a prescription renewal is required (1 day)
+  - Build the UI for alert display (1 day)
+- Medical Provider Note Access (4 days)
+  - Design the database schema for medical providers' notes (0.5 days)
+  - Develop API endpoints for the management of notes (1 day)
+  - Build the UI for viewing and adding notes (1 day)
+  - Implement role-based access to view and edit notes (0.5 days)
+  - Test note system functionality (1 day)
 ## Tentative Meeting Schedule
 - February 17, 2025 @ 8PM
 - February 20, 2025 @ ~~8PM~~ 12PM
@@ -229,7 +323,13 @@
 - ~~February 27, 2025 @ 8PM~~ *CANCELLED due to scheduling conflicts*
 - March 3, 2025 @ 8PM
 - March 6, 2025 @ 8PM
-- March 10, 2025 @ 8PM
+- March 10, 2025 @ ~~8PM~~ 8:30PM
+- March 31, 2025 @ 8PM *First meeting following spring break*
+- April 3, 2025 @ 8PM 
+- April 7, 2025 @ 8PM
+- April 14, 2025 @ 8PM
+- April 17, 2025 @ 8PM
+- April 21, 2025 @ 8PM
 
 *Note: Unless otherwise noted, all meetings will be taking place over Zoom.*
 
