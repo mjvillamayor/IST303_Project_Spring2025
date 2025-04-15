@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, render_template, request
 import mysql.connector
 
 app = Flask(__name__)
@@ -11,10 +11,9 @@ def get_db_connection():
         password='testingpassword',
         database='medical_system',
         port=3306,
-        auth_plugin='mysql_native_password'  # Add this line
+        auth_plugin='mysql_native_password'
     )
-    return connection  # Corrected indentation
-
+    return connection
 
 # API to fetch medical history for a specific patient
 @app.route('/api/medical-history/<int:patient_id>', methods=['GET'])
@@ -37,6 +36,11 @@ def get_medical_history(patient_id):
         return jsonify(medical_history), 200
     else:
         return jsonify({'message': 'No medical history found for this patient.'}), 404
+
+# Render the HTML page at the root URL
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

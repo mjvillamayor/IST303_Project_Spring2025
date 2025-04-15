@@ -55,7 +55,7 @@ def update_medication(med_id):
 def delete_medication(med_id):
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("DELETE FROM medications WHERE id = %s", (med_id,))
+    cursor.execute("DELETE FROM medications WHERE medication_id = %s", (med_id,))
     conn.commit()
     conn.close()
     return jsonify({"message": "Medication deleted successfully"})

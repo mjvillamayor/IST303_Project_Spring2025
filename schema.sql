@@ -87,6 +87,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON medical_system.messages TO provider;
 
 GRANT SELECT ON medical_system.patients TO patient;
 GRANT SELECT ON medical_system.messages TO patient;
+GRANT SELECT ON medical_system.PatientMedicalHistory TO patient;
 
 -- Create users and assign roles
 CREATE USER 'admin_user'@'localhost' IDENTIFIED BY 'admin_password';
@@ -119,3 +120,39 @@ FLUSH PRIVILEGES;
 CREATE USER 'test'@'192.168.1.250' IDENTIFIED BY 'testcase';
 GRANT ALL PRIVILEGES ON medical_system.* TO 'test'@'192.168.1.250';
 FLUSH PRIVILEGES;
+
+CREATE USER 'Ben'@'localhost' IDENTIFIED BY 'testingpassword';
+GRANT ALL PRIVILEGES ON medical_system.* TO 'Ben'@'localhost';
+
+-- Testing
+USE medical_system;
+SHOW TABLES;
+SELECT * FROM PatientMedicalHistory
+SELECT * FROM PATIENTS;
+SELECT * FROM MEDICATIONS;
+SELECT * FROM providers;
+
+INSERT INTO PatientMedicalHistory 
+(patient_id, visit_date, diagnosis, treatment, medications, provider_id, notes)
+VALUES
+(3, '2024-10-05', 'Asthma', 'Inhaler prescribed', 'Albuterol', 101, 'Patient reports increased wheezing during exercise.'),
+(3, '2025-01-15', 'Routine Checkup', 'General wellness review', NULL, 102, 'All vitals normal. Recommended annual flu shot.'),
+(4, '2024-12-10', 'Type 1 Diabetes', 'Diet plan updated; insulin dosage adjusted', 'Insulin Glargine', 103, 'Patient responding well to new plan.'),
+(5, '2025-02-20', 'High Blood Pressure', 'Medication dosage increased', 'Lisinopril', 101, 'Advised lifestyle changes including reduced salt intake.'),
+(4, '2025-03-10', 'Allergic Reaction', 'Administered antihistamines', 'Diphenhydramine', 104, 'Patient experienced mild rash after seafood.'),
+(6, '2025-04-01', 'Back Pain', 'Physical therapy recommended', NULL, 105, 'No signs of disc damage. Muscle strain suspected.');
+
+INSERT INTO providers (provider_id, first_name, last_name, specialty, contact_info)
+VALUES
+(101, 'Emily', 'Wong', 'Pulmonology', 'emily.wong@clinic.com'),
+(102, 'Jake', 'Chen', 'General Practice', 'jake.chen@health.org'),
+(103, 'Sasha', 'Lee', 'Endocrinology', 'sasha.lee@hospital.net'),
+(104, 'Raj', 'Kapoor', 'Allergy & Immunology', 'raj.kapoor@clinic.com'),
+(105, 'Megan', 'Smith', 'Physical Therapy', 'megan.smith@ptcenter.com');
+
+INSERT INTO patients (first_name, last_name, date_of_birth, gender, contact_info)
+VALUES
+('Alex', 'Johnson', '1990-05-14', 'Male', 'alex.johnson@example.com'),
+('Maria', 'Lopez', '1985-08-22', 'Female', 'maria.lopez@example.com'),
+('David', 'Nguyen', '1979-02-09', 'Male', 'david.nguyen@example.com'),
+('Sophia', 'Patel', '2000-11-30', 'Female', 'sophia.patel@example.com');

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #555;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .form-inline {
+            display: flex;
+            gap: 10px;
+        }
+        .form-inline input {
+            width: 200px;
+        }
+        .history-list {
+            margin-top: 20px;
+        }
+        .history-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .history-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .history-list li strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Provider Dashboard</h1>
+
+        <!-- View Medical History Section -->
+        <div class="section">
+            <h2>View Patient Medical History</h2>
+            <div class="form-group form-inline">
+                <label for="patient-id-view">Patient ID:</label>
+                <input type="number" id="patient-id-view" placeholder="Enter Patient ID">
+                <button onclick="fetchMedicalHistory()">View History</button>
+            </div>
+            <div id="medical-history" class="history-list"></div>
+        </div>
+
+        <!-- Create or Edit Medical History Section -->
+        <div class="section">
+            <h2>Create or Edit Patient Medical History</h2>
+            <form id="edit-history-form">
+                <div class="form-group">
+                    <label for="patient_id">Patient ID</label>
+                    <input type="number" id="patient_id" name="patient_id" required>
+
+                    <label for="provider_id">Provider ID</label>
+                    <input type="number" id="provider_id" name="provider_id" required>
+
+                    <label for="visit_date">Visit Date</label>
+                    <input type="date" id="visit_date" name="visit_date" required>
+
+                    <label for="diagnosis">Diagnosis</label>
+                    <input type="text" id="diagnosis" name="diagnosis" required>
+
+                    <label for="treatment">Treatment</label>
+                    <input type="text" id="treatment" name="treatment" required>
+
+                    <label for="medications">Medications</label>
+                    <input type="text" id="medications" name="medications" required>
+
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes"></textarea>
+
+                    <button type="submit">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Function to fetch and display a patient's medical history
+        function fetchMedicalHistory() {
+            const patientId = document.getElementById('patient-id-view').value;
+            if (!patientId) {
+                alert("Please enter a patient ID");
+                return;
+            }
+
+            fetch(`/api/medical-history/${patientId}`)
+                .then(response => response.json())
+                .then(data => {
+                    const historyDiv = document.getElementById('medical-history');
+                    if (data.message) {
+                        historyDiv.innerHTML = `<p>${data.message}</p>`;
+                    } else {
+                        historyDiv.innerHTML = "<ul>" +
+                            data.map(item => `
+                                <li>
+                                    <strong>Visit Date:</strong> ${item.visit_date}<br>
+                                    <strong>Diagnosis:</strong> ${item.diagnosis}<br>
+                                    <strong>Treatment:</strong> ${item.treatment}<br>
+                                    <strong>Medications:</strong> ${item.medications}<br>
+                                    <strong>Provider:</strong> ${item.provider_first_name} ${item.provider_last_name}
+                                </li>
+                            `).join('') +
+                            "</ul>";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // Form submission for creating or updating medical history
+        document.getElementById('edit-history-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let formData = new FormData(this);
+            let data = {
+                patient_id: formData.get('patient_id'),
+                provider_id: formData.get('provider_id'),
+                visit_date: formData.get('visit_date'),
+                diagnosis: formData.get('diagnosis'),
+                treatment: formData.get('treatment'),
+                medications: formData.get('medications'),
+                notes: formData.get('notes')
+            };
+
+            fetch('/api/create-history', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Medical history saved successfully');
+            })
+            .catch(error => {
+                alert('Error saving medical history');
+            });
+        });
+    </script>
+</body>
+</html>

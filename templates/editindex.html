@@ -1,0 +1,55 @@
+<form id="edit-history-form">
+    <label for="patient_id">Patient ID</label>
+    <input type="number" id="patient_id" name="patient_id" required>
+
+    <label for="diagnosis">Diagnosis</label>
+    <input type="text" id="diagnosis" name="diagnosis" value="">
+
+    <label for="treatment">Treatment</label>
+    <input type="text" id="treatment" name="treatment" value="">
+
+    <label for="medications">Medications</label>
+    <input type="text" id="medications" name="medications" value="">
+
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="notes"></textarea>
+
+    <button type="submit">Save Changes</button>
+</form>
+
+<script>
+    document.getElementById('edit-history-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let formData = new FormData(this);
+        let data = {
+            diagnosis: formData.get('diagnosis'),
+            treatment: formData.get('treatment'),
+            medications: formData.get('medications'),
+            notes: formData.get('notes')
+        };
+
+        // Get the patient_id from the input field
+        let patientId = formData.get('patient_id');
+
+        // Check if patient_id is provided
+        if (!patientId) {
+            alert('Patient ID is required!');
+            return;
+        }
+
+        // Make the PUT request to update the medical history for the specific patient
+        fetch('/api/edit-history/' + patientId, {  // Use the patient_id from the form input
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('Medical history updated successfully');
+        })
+        .catch(error => {
+            alert('Error updating medical history');
+        });
+    });
+</script>

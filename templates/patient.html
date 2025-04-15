@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        h2 { margin-top: 2rem; }
+        label { display: block; margin-top: 0.5rem; }
+        input, button { margin-bottom: 1rem; display: block; width: 300px; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Patient Medical History</h1>
+
+    <input type="number" id="patient-id" placeholder="Enter Your Patient ID">
+    <button onclick="fetchMedicalHistory()">Get My History</button>
+
+    <div id="medical-history"></div>
+
+    <script>
+        function fetchMedicalHistory() {
+            const patientId = document.getElementById('patient-id').value;
+            if (!patientId) return alert("Please enter a patient ID");
+
+            fetch(`/api/medical-history/${patientId}`)
+                .then(response => response.json())
+                .then(data => {
+                    const historyDiv = document.getElementById('medical-history');
+                    if (data.message) {
+                        historyDiv.innerHTML = `<p>${data.message}</p>`;
+                    } else {
+                        historyDiv.innerHTML = "<ul>" + data.map(item => `
+                            <li>
+                                <strong>Visit Date:</strong> ${item.visit_date}<br>
+                                <strong>Diagnosis:</strong> ${item.diagnosis}<br>
+                                <strong>Treatment:</strong> ${item.treatment}<br>
+                                <strong>Medications:</strong> ${item.medications}<br>
+                                <strong>Notes:</strong> ${item.notes}<br>
+                                <strong>Provider:</strong> ${item.provider_first_name} ${item.provider_last_name}
+                            </li>
+                        `).join('') + "</ul>";
+                    }
+                })
+                .catch(err => {
+                    console.error('Fetch error:', err);
+                });
+        }
+    </script>
+</body>
+</html>
