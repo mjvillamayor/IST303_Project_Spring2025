@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, redirect, url_for
 import mysql.connector
 
 app = Flask(__name__)
@@ -18,10 +18,33 @@ def get_db_connection():
 def home():
     return render_template('home.html')
 
-# Patient: View Medical History
-@app.route('/patient')
-def patient():
+# --- Role Selection Route ---
+@app.route('/role/<role>')
+def role(role):
+    # Check if the user is a provider or a patient
+    if role == 'patient':
+        return redirect(url_for('patient_dashboard'))
+    elif role == 'provider':
+        return redirect(url_for('provider_dashboard'))
+    else:
+        return 'Invalid role', 404
+
+# --- Provider Dashboard ---
+@app.route('/provider_dashboard')
+def provider_dashboard():
+    # Here you would add an access check based on user roles if needed
+    return render_template('provider.html')
+
+# --- Patient Dashboard ---
+@app.route('/patient_dashboard')
+def patient_dashboard():
+    # Here you would add an access check based on user roles if needed
     return render_template('patient.html')
+
+# Patient: View Medical History
+@app.route('/patient/<int:patient_id>')
+def view_medical_history(patient_id):
+    return render_template('patient.html', patient_id=patient_id)
 
 @app.route('/api/medical-history/<int:patient_id>', methods=['GET'])
 def get_medical_history(patient_id):

@@ -1,5 +1,17 @@
 USE medical_system;
 
+CREATE TABLE users (
+    user_id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('patient', 'provider') NOT NULL,
+    patient_id BIGINT UNSIGNED DEFAULT NULL,
+    provider_id BIGINT UNSIGNED DEFAULT NULL,
+    PRIMARY KEY (user_id),
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id),
+    FOREIGN KEY (provider_id) REFERENCES providers(provider_id)
+);
+
 CREATE TABLE patients (
     patient_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -156,3 +168,9 @@ VALUES
 ('Maria', 'Lopez', '1985-08-22', 'Female', 'maria.lopez@example.com'),
 ('David', 'Nguyen', '1979-02-09', 'Male', 'david.nguyen@example.com'),
 ('Sophia', 'Patel', '2000-11-30', 'Female', 'sophia.patel@example.com');
+
+INSERT INTO users (username, password, role, provider_id)
+VALUES ('drsmith', 'testpassword', 'provider', 105);
+
+INSERT INTO users (username, password, role, patient_id)
+VALUES ('janedoe', 'testpassword', 'patient', 6);
