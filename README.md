@@ -84,12 +84,12 @@
     - Build the UI for messaging system (1 day)
     - Test provider login (0.5 days)
     - Test messaging system (0.5 days)
-5. As a medical provider, I want to access notes from other healthcare personnel, so that no information is lost between personnel when changing shifts. (Estimate: 4 days)
-    - Design the database schema for medical providers' notes (0.5 days)
-    - Develop API endpoints for the management of notes (1 day)
-    - Build the UI for viewing and adding notes (1 day)
-    - Implement role-based access to view and edit notes (0.5 days)
-    - Test note system functionality (1 day)
+~~5. As a medical provider, I want to access notes from other healthcare personnel, so that no information is lost between personnel when changing shifts. (Estimate: 4 days)~~
+    ~~- Design the database schema for medical providers' notes (0.5 days)~~
+    ~~- Develop API endpoints for the management of notes (1 day)~~
+    ~~- Build the UI for viewing and adding notes (1 day)~~
+    ~~- Implement role-based access to view and edit notes (0.5 days)~~
+    ~~- Test note system functionality (1 day)~~
 6. As a medical provider, I want to access and edit the database of patients' medical histories that includes past diagnoses, past and current medication prescriptions, and medical procedures among others so that there is a comprehensive profile of each patient. (Estimate: 4 days)
     - Implement medical provider permission system for history access (1 day)
     - Develop the API for editing patient records (1 day)
@@ -115,7 +115,7 @@
     - Implement access control across application system (2 days)
     - Build the UI for administrators to manage user roles (1 day)
     - Test access restrictions of roles (1 day)
-4. As an administrator, I want to implement a feedback system that allows all stakeholders to voice improvements and concerns so that the application can be dynamically improved. (Estimate: 4 days)
+4. As an administrator, I want to implement a feedback system that allows all stakeholders to voice improvements and concerns so that the application can be dynamically improved. (Estimate: 4 days) **(OPTIONAL)**
     - Implement database schema for feedback submissions (1 day)
     - Develop the API for sending and receiving feedback (1 day)
     - Build the UI for submitting and viewing feedback (1 day)
@@ -229,9 +229,9 @@
 - Patient Profile Portal (Patient User Story #3)
 - Medical Provider Monitoring of Medication (Medical Provider User Story #3)
 - Medical Provider Login with Messaging System (Medical Provider User Story #4)
-- Medical Provider Note Access (Medical Provider User Story #5)
+~~- Medical Provider Note Access (Medical Provider User Story #5)~~
 - Medical Provider CRUD of Medical Histories (Medical Provider User Story #6)
-- Administrator-Implemented Feedback System (Administrator User Story #4)
+- Administrator-Implemented Feedback System (Administrator User Story #4) **OPTIONAL**
 ## Iteration 1 (Length: 16 Person-Days / Finish by 04/11 @ 11:59PM)
 - Features:
   - Patient View of Individual Medical History (4 days)
@@ -259,13 +259,18 @@
     - Add a notification system for when the pick-up of medication has been missed and when a prescription renewal is required (1 day)
     - Build the UI for alert display (1 day)
     - Test notifcation system (1 day)
-  - Medical Provider Note Access (4 days)
-    - Design the database schema for medical providers' notes (0.5 days)
-    - Develop API endpoints for the management of notes (1 day)
-    - Build the UI for viewing and adding notes (1 day)
-    - Implement role-based access to view and edit notes (0.5 days)
-    - Test note system functionality (1 day)
-  - Administrator-Implemented Feedback System (4 days)
+  - Medical Provider Monitoring of Medication (4 days)
+    - Implement a tracking system for medication dispensements (1 day)
+    - Develop the API to send alerts about missed dosages and needing to restock (1 day)
+    - Build the UI surrounding medical provider notifications (1 day)
+    - Test the alert system (1 day)
+  ~~- Medical Provider Note Access (4 days)~~
+    ~~- Design the database schema for medical providers' notes (0.5 days)~~
+    ~~- Develop API endpoints for the management of notes (1 day)~~
+    ~~- Build the UI for viewing and adding notes (1 day)~~
+    ~~- Implement role-based access to view and edit notes (0.5 days)~~
+    ~~- Test note system functionality (1 day)~~
+  - Administrator-Implemented Feedback System (4 days) **OPTIONAL**
     - Implement database schema for feedback submissions (1 day)
     - Develop the API for sending and receiving feedback (1 day)
     - Build the UI for submitting and viewing feedback (1 day)
@@ -288,8 +293,18 @@
 **Jade**
 - Testing of Patient Profile Portal (1 day)
 - Testing of Medical Provider Messaging System (1 day)
-- Testing of Patient Monitoring of Medication (1 day)
-- Administrator-Implemented Feedback System (4 days)
+- Patient Monitoring of Medication (5 days)
+  - Implement the medication tracking database (1 day)
+  - Develop the API to fetch current and past prescriptions (1 day)
+  - Add a notification system for when the pick-up of medication has been missed and when a prescription renewal is required (1 day)
+  - Build the UI for alert display (1 day)
+  - Test notifcation system (1 day)
+- Medical Provider Monitoring of Medication (4 days)
+  - Implement a tracking system for medication dispensements (1 day)
+  - Develop the API to send alerts about missed dosages and needing to restock (1 day)
+  - Build the UI surrounding medical provider notifications (1 day)
+  - Test the alert system (1 day)
+- Administrator-Implemented Feedback System (4 days) **OPTIONAL**
   - Implement database schema for feedback submissions (1 day)
   - Develop the API for sending and receiving feedback (1 day)
   - Build the UI for submitting and viewing feedback (1 day)
@@ -305,17 +320,17 @@
   - Build the UI for messaging system (1 day)
 
 **Millicent**
-- Patient Monitoring of Medication without Testing (4 days)
-  - Implement the medication tracking database (1 day)
-  - Develop the API to fetch current and past prescriptions (1 day)
-  - Add a notification system for when the pick-up of medication has been missed and when a prescription renewal is required (1 day)
-  - Build the UI for alert display (1 day)
-- Medical Provider Note Access (4 days)
-  - Design the database schema for medical providers' notes (0.5 days)
-  - Develop API endpoints for the management of notes (1 day)
-  - Build the UI for viewing and adding notes (1 day)
-  - Implement role-based access to view and edit notes (0.5 days)
-  - Test note system functionality (1 day)
+~~- Patient Monitoring of Medication without Testing (4 days)~~
+  ~~- Implement the medication tracking database (1 day)~~
+  ~~- Develop the API to fetch current and past prescriptions (1 day)~~
+  ~~- Add a notification system for when the pick-up of medication has been missed and when a prescription renewal is required (1 day)~~
+  ~~- Build the UI for alert display (1 day)~~
+~~- Medical Provider Note Access (4 days)~~
+  ~~- Design the database schema for medical providers' notes (0.5 days)~~
+  ~~- Develop API endpoints for the management of notes (1 day)~~
+  ~~- Build the UI for viewing and adding notes (1 day)~~
+  ~~- Implement role-based access to view and edit notes (0.5 days)~~
+  ~~- Test note system functionality (1 day)~~
 ## Tentative Meeting Schedule
 - February 17, 2025 @ 8PM
 - February 20, 2025 @ ~~8PM~~ 12PM
