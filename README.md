@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 # Medication Management and Error Reduction System
 
 ## Product
 The system is designed to significantly reduce medication errors in healthcare settings by effectively integrating real-time barcode scanning alerts related to prescription management, medication dispensements, and dangerous drug-drug interactions from the perspective of medical providers.
 
+=======
+# Application
+- Medication Management and Error Reduction System
+## Product
+- The system is designed to significantly reduce medication errors in healthcare settings by effectively integrating real-time barcode scanning alerts related to prescription management, medication dispensements, and dangerous drug-drug interactions from the perspective of medical providers.
+>>>>>>> 8ea69baf6411ad1e154769ad9d9d89a3619ee194
 ## Team Members
 - Ben Morehead
 - Jade Sleiman
 - Mark Villamayor
 - Millicent Wanyeki
+<<<<<<< HEAD
 
 ## How to Run the Program
 
@@ -64,3 +72,15 @@ The system is designed to significantly reduce medication errors in healthcare s
 2. **User-Centered Design for Clinical Workflows**: Designing for healthcare providers requires balancing comprehensive information with simplicity and speed, as decisions made at the point of care directly impact patient outcomes.
 
 3. **Importance of Robust Error Management**: In healthcare applications, graceful degradation and clear error messaging are critical - the system must provide useful information even when faced with incomplete data or API failures.
+=======
+## How to Run
+
+## How to Test
+
+## How to Report Test Coverage
+
+## Three Most Important Things Learned about Software Development from this Application
+- 
+- 
+- 
+>>>>>>> 8ea69baf6411ad1e154769ad9d9d89a3619ee194
