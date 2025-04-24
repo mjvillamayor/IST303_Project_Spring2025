@@ -70,11 +70,3 @@ The system is designed to significantly reduce medication errors in healthcare s
 2. **User-Centered Design for Clinical Workflows**: Designing for healthcare providers requires balancing comprehensive information with simplicity and speed, as decisions made at the point of care directly impact patient outcomes.
 
 3. **Importance of Robust Error Management**: In healthcare applications, graceful degradation and clear error messaging are critical - the system must provide useful information even when faced with incomplete data or API failures.
-=======
-## How to Run
-
-## How to Test
-
-## How to Report Test Coverage
-
-## Three Most Important Things Learned about Software Development from this Application
